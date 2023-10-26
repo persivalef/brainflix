@@ -1,6 +1,8 @@
 import "./Header.scss";
 import logo from "../../assets/Logo/BrainFlix-logo.svg";
 import avatar from "../../assets/images/Mohan-muruge.jpg";
+import searchimage from "../../assets/Icons/search.svg";
+
 
 function Header() {
   return (
@@ -16,7 +18,7 @@ function Header() {
         <input
           type="button"
           class="header__upload-button"
-          placeholder="UPLOAD"
+          value="UPLOAD"
         />
       </section>
       <img class="header__avatar--tablet" src={avatar} alt="avater" />

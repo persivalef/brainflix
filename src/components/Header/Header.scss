@@ -1,5 +1,6 @@
 @use "../../styles/partials/global" as *;
 @use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
 
 .header {
   display: flex;
@@ -29,12 +30,42 @@
     display: flex;
   }
 
-  &__search-bar {
-    width: 70vw;
-    height: 6vh;
+  &__search{
+    display: flex;
+  }
 
-    &::input {
-      border: solid 0.0625rem;
+  &__search-icon{
+    width: 5vw;
+  }
+
+  &__search-bar {
+    width: 72vw;
+    height: 6vh;
+    border: .0625rem solid $color_mercury;
+    background-color: $color_alabaster;
+    border-radius: .25rem;
+
+    &::placeholder{
+        @include body-fontStyle;
+        color: $color_black;
+        padding: 0 2rem;
+    }
+  }
+
+  &__upload{
+    width: 100%;
+  }
+
+  &__upload-button{
+    width: 88vw;
+    height: 7vh;
+    margin-left: .2rem;
+    background-color: $color_blue;
+    border: transparent;
+    border-radius: .25rem;
+
+    &::placeholder{
+        color: $color_white;
     }
   }
 }

@@ -1,0 +1,29 @@
+@mixin header-fontStyle{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+}
+
+@mixin section-fontStyle{
+    font-size: .75rem;
+    line-height: 1.25rem;
+    font-weight: 700;
+}
+
+@mixin subheader-fontStyle{
+    font-size: .8125rem;
+    line-height: 1.125rem;
+    font-weight: 700;
+}
+
+@mixin body-fontStyle{
+    font-size: .8125rem;
+    line-height: 1.125rem;
+    font-weight: 400;
+}
+
+@mixin label-fontStyle{
+    font-size: .625rem;
+    line-height: 1.25rem;
+    font-weight: 700;
+}
