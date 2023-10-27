@@ -46,6 +46,9 @@
     border: .0625rem solid $color_mercury;
     background-color: $color_alabaster;
     border-radius: .25rem;
+    background-image: url(../../assets/Icons/search.svg);
+    background-repeat:no-repeat;
+    background-position: 0.5rem 0.5rem;
 
     &::placeholder{
         @include body-fontStyle;
@@ -69,5 +72,8 @@
     border: transparent;
     border-radius: .25rem;
     color: $color_white;
+    background-image: url(../../assets/Icons/upload.svg);
+    background-repeat: no-repeat;
+    background-position: .5rem .5rem;
   }
 }
