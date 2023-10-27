@@ -21,7 +21,7 @@ function Header() {
           value="UPLOAD"
         />
       </section>
-      <img class="header__avatar--tablet" src={avatar} alt="avater" />
+      <img class="header__avatar-tablet" src={avatar} alt="avater" />
     </article>
   );
 }
