@@ -1,8 +1,9 @@
+import "../../data/videos.json";
 
-function Video() {
+
+function Video({videoDetails}) {
     return (
         <article>
-            <video
         </article>
     );
 }
