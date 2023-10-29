@@ -4,6 +4,7 @@ import Header from "./components/Header/Header";
 import Video from "./components/Video/Video";
 import videoDetails from "./data/video-details.json";
 import videos from "./data/videos.json";
+import VideoInfo from "./components/VideoInfo/VideoInfo";
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
     <>
       <Header />
       <Video video ={video}/>
+      <VideoInfo video = {video}/>
     </>
   );
 }
