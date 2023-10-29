@@ -1,0 +1,19 @@
+@use "../../styles/partials/global" as *;
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.video {
+  background-color: $color_darkBlack;
+  display: flex;
+  justify-content: center;
+
+  &__displayed {
+    width: 100vw;
+    @include tablet {
+        width: 90vw;
+    }
+    @include desktop {
+        width: 70vw;
+    }
+  }
+}

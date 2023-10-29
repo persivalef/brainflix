@@ -7,16 +7,19 @@ import videos from "./data/videos.json";
 
 function App() {
 
-  const [video, setVideo] = useState(videoDetails[0])
+  const [video, setVideo] = useState(videoDetails[0]);
 
   const clickVideo = (videoId) => {
     const selectedVideo = videoDetails.find(video => video.id === videoId); 
     setVideo(selectedVideo);
-  }
+  };
+
+  const nextVideos = videos.filter(video => video.id !== setVideo);
+
   return (
     <>
       <Header />
-      <Video />
+      <Video video ={video}/>
     </>
   );
 }
