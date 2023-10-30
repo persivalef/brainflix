@@ -4,13 +4,16 @@ import likesIcon from '../../assets/Icons/likes.svg';
 
 function VideoInfo({video}) {
   const { title, channel, timestamp, description, likes, views } = video;
+
+  const date = new Date(timestamp).toLocaleDateString();
+
   return (
     <section className="info">
       <h1 className="info__title">{title}</h1>
       <section className="info__details">
         <div className="info__left">
-          <p className="info__account">{channel}</p>
-          <p className="info__date">{timestamp}</p>
+          <p className="info__account">By {channel}</p>
+          <p className="info__date">{date}</p>
         </div>
         <div className="info__right">
           <div className="info__views-wrapper">
@@ -24,7 +27,7 @@ function VideoInfo({video}) {
         </div>
       </section>
       <section className="info__wrapper">
-        <p className="info__description"></p>
+        <p className="info__description">{description}</p>
       </section>
     </section>
   );

@@ -1,0 +1,60 @@
+@use "../../styles/partials/global" as *;
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.next-videos{
+    width: 100%;
+
+    @include tablet{
+        width: 41%;
+    }
+
+    &__videos{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 1rem;
+
+        @include desktop{
+            width: 25vw;
+            justify-content: flex-start;
+        }
+    }
+
+    &__thumbnail{
+        width: 35vw;
+        height: 9vh;
+        border-radius: .25rem;
+        object-fit: cover;
+
+        @include tablet{
+            width: 15vw;
+            height: 8vh;
+        }
+
+        @include desktop{
+            width: 35%;
+        }
+    }
+
+    &__video-title{
+        @include body-fontStyle;
+        font-weight: 600;
+    }
+
+    &__wrapper{
+        width: 50vw;
+
+        @include tablet{
+            width: 20vw;
+        }
+
+        @include desktop{
+            width: 13vw;
+            padding-left: 1rem;
+        }
+    }
+
+    &__account{
+        @include body-fontStyle;
+    }
+}

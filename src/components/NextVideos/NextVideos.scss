@@ -1,0 +1,27 @@
+@use "../../styles/partials/global" as *;
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.next-video-list{
+    padding: 1rem;
+
+    @include tablet{
+        padding: 1rem 2rem;
+    }
+
+    @include desktop{
+        width: 27vw;
+    }
+
+    &__title{
+        @include body-fontStyle;
+        color: $color_silver;
+        font-weight: 500;
+
+        @include tablet{
+            @include body-fontStyleTablet;
+            font-weight: 500;
+            padding-bottom: 1rem;
+        }
+    }
+}

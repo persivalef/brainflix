@@ -1,0 +1,17 @@
+@use "./styles/partials/global" as *;
+@use "./styles/partials/variables" as *;
+@use "./styles/partials/mixins" as *;
+
+.aside {
+    @include desktop {
+        width: 100%;
+        display: flex;
+        padding: 0 10 rem 0 6rem;
+    }
+}
+.not-aside {
+    @include desktop {
+        width: 73%;
+        border-right: solid 2px $color-mercury;
+    }
+}

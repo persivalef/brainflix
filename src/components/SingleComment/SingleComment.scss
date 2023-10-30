@@ -1,0 +1,41 @@
+@use "../../styles/partials/global" as *;
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.single-comment{
+    display: flex;
+    @include body-fontStyle;
+    padding: 1rem 0;
+    border-bottom: solid .0625rem $color_mercury;
+
+    @include desktop{
+        width: 57vw;
+        padding-right: 1.5rem;
+        @include body-fontStyleTablet;
+    }
+
+    &__avatar{
+        background-color: $color_mercury;
+        height: 2.25rem;
+        width: 2.25rem;
+        border-radius: 50%;
+    }
+
+    &__name-date{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: .5rem;
+    }
+
+    &__name{
+        font-weight: 500;
+    }
+
+    &__date{
+        color: $color_silver;
+    }
+
+    &__form-wrapper{
+        padding-left: 1rem;
+    }
+}
